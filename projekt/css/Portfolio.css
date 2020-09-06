@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+body {
+    background-color: #161616;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  header{
+    display:flex;
+    justify-content: space-between;
+    background-color:#F4F7FF;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: fixed;
+	  width:100%;
+	  box-sizing: border-box;
+	  padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+  }
+  
+  .logo img{
+    float: left;
+    margin-left: -650px;
+    margin-top: 5px;
+    width: 120px;
+    height: auto;
+}
+
+  ul{
+      margin-top: 32px;
+
+  }
+
+  ul li{
+      display: inline;
+  }
+
+  ul li a{
+      text-decoration: none;
+      color: #161616;
+      padding: 10px 15px;
+      font-size: 12px;
+      transition: 0.4s;
+
+  }
+
+  ul li a:hover{
+    background-color:#161616;
+	color:#F4F7FF;
+	font-weight: bold;
+	transition: all ease 0.4s;
+
+  }
+
+   ul li.active a{
+    background-color:#161616;
+    color:#F4F7FF;
+   }
+
+  .main{
+      max-width: 1200px;
+      margin: auto;
+      
+  }
+
+
+  #portfolio{
+    background-color:#161616;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5% 0px 5%;
+    position: relative;
+  }
+  .portfolio-text{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 50%;
+  }
+  .portfolio-text h1{
+    text-transform: uppercase;
+    font-size: 5rem;
+    color:#F2AA4CFF;
+  }
+  .portfolio-text h2{
+    font-size: 3rem;
+    color:#FFFFFF;
+    font-weight: 400;
+  }
+  .portfolio-text h1,h2{
+    margin: 0px;
+    padding: 0px;
+  }
+  .portfolio-text p{
+    font-size: 1.2rem;
+    color:rgba(255,255,255,0.90);
+    
+  }
+  
+  .box{
+    width: 700px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin-left: 6%;
+    margin-top: 6%;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  .box h1{
+    color: #F2AA4CFF;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 600;
+  }
+  .box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+  }
+ 
+  #portfolia{
+    width:100%;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 2% 20px 2%;
+  }
+  
+
+  .p-box{
+  
+    background-color: #1F1F1F;
+    overflow: hidden;
+    box-shadow: 2px 2px 13px rgba(0,0,0,0.3);
+    position: relative;
+  
+  }
+  .p-box img{
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .p-container{
+    width: 100%;
+    height:70vh;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+  }
+  .overlay-text{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(31,31,31, 0.8);
+    display:none;
+    
+  }
+  .overlay-text h1,p{
+    color: #FFFFFF;
+  }
+  .overlay-text h1{
+    font-size: 2.2rem;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+    
+  }
+  .overlay-text p{
+    font-size: 1.2rem;
+    margin: 0px;
+  
+  
+  }
+  .p-box:hover .overlay-text{
+    display: flex;
+    
+  }
+
+  #contact-btn{
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 200px;
+    background-color: #F4F7FF;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    box-shadow:2px 0px 20px rgba(0,0,0,0.4); 
+  }
+  .c-b-heading{
+    font-size: 2rem;
+    color:#1E1E1E;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 10px;
+    padding: 5px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #1E1E1E;
+    
+  }
+
+  #contact-btn button{
+    text-transform: uppercase;
+    color:#FFFFFF;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    width:150px;
+    height: 40px;
+    margin: 10px;
+    background-color: #1E1E1E;
+    border: none;
+    outline: none;
+    box-shadow: 2px 5px 6px rgba(0,0,0,0.2);
+  }
+  #contact-btn button:hover{
+    background-color: #0d0d0d;
+    color:#F4F7FF;
+    transition: all ease 0.4s;
+    cursor: pointer;
+  }
+
+  .footer{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #161616;
+
+  }
+  
+  .inner_footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+  }
+
+  .inner_footer .logo_container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+  }
+
+  .inner_footer .logo_container img{
+    width: 200px;
+    height: auto;
+  }
+
+  .inner_footer .footer_third{
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+  }
+
+  .inner_footer .footer_third:last-child{
+    margin-right: 0;
+  }
+
+  .inner_footer .footer_third h1{
+    font-family: 'Josefin Sans', sans-serif; 
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #F2AA4CFF;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .inner_footer .footer_third a{
+    font-family: 'Josefin Sans', sans-serif; 
+    text-decoration: none;
+    font-size: 18px;
+    color: #F4F7FF;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .inner_footer .footer_third li{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+  }
+
+  .inner_footer .footer_third span{
+    color: #F4F7FF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+  }
+
+  @media(max-width: 600px){
+    .footer .inner_footer{
+      width: 90%;
+    }
+
+    .inner_footer .logo_container,
+    .inner_footer .footer_third{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+    

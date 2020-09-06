@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+body {
+    background-color: #161616;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  header{
+    display:flex;
+    justify-content: space-between;
+    background-color:#F4F7FF;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: fixed;
+	  width:100%;
+	  box-sizing: border-box;
+	  padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+  }
+  
+  .logo img{
+    cursor: pointer;
+    float: left;
+    margin-left: -650px;
+    margin-top: 5px;
+    width: 120px;
+    height: auto;
+}
+
+  ul{
+      margin-top: 32px;
+
+  }
+
+  ul li{
+      display: inline;
+  }
+
+  ul li a{
+      text-decoration: none;
+      color: #161616;
+      padding: 10px 15px;
+      font-size: 12px;
+      transition: 0.4s;
+
+  }
+
+  ul li a:hover{
+    background-color:#161616;
+	color:#F4F7FF;
+	font-weight: bold;
+	transition: all ease 0.4s;
+
+  }
+
+   ul li.active a{
+    background-color:#161616;
+    color:#F4F7FF;
+   }
+
+  .main{
+      max-width: 1200px;
+      margin: auto;
+      
+  }
+
+  #anlita{
+    width:100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/gocku.jpg);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+  }
+  .anlita-text{
+    font-family: 'Josefin Sans', sans-serif;;
+    width: 50%;
+  }
+  .anlita-text h1{
+    text-transform: uppercase;
+    font-size: 5rem;
+    color:#F2AA4CFF;
+  }
+  .anlita-text h2{
+    font-size: 3rem;
+    color:#161616;
+    background-color:#F4F7FF;
+    text-shadow: 1.5px 1.5px #F2AA4CFF;
+    font-weight: 400;
+  }
+  .anlita-text h1,h2{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .anlita-text button{
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    margin-top: 20px;
+    color: #F4F7FF;
+    transition: all ease 0.4s;
+    text-transform: uppercase;
+    border: 2px solid #F2AA4CFF;
+    background-color:#161616;
+  }
+
+  .anlita-text button:hover{
+    color: #161616;
+    background: #F4F7FF;
+    border: none;
+  }
+
+  .pr h1{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:#F2AA4CFF;
+  }
+
+  .footer{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #161616;
+
+  }
+  
+  .inner_footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+  }
+
+  .inner_footer .logo_container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+  }
+
+  .inner_footer .logo_container img{
+    width: 200px;
+    height: auto;
+  }
+
+  .inner_footer .footer_third{
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+  }
+
+  .inner_footer .footer_third:last-child{
+    margin-right: 0;
+  }
+
+  .inner_footer .footer_third h1{
+    font-family: 'Josefin Sans', sans-serif; 
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #F2AA4CFF;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .inner_footer .footer_third a{
+    font-family: 'Josefin Sans', sans-serif; 
+    text-decoration: none;
+    font-size: 18px;
+    color: #F4F7FF;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .inner_footer .footer_third li{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+  }
+
+  .inner_footer .footer_third span{
+    color: #F4F7FF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+  }
+
+  @media(max-width: 600px){
+    .footer .inner_footer{
+      width: 90%;
+    }
+
+    .inner_footer .logo_container,
+    .inner_footer .footer_third{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .box-img{
+    border: 3px solid #161616;
+    background:transparent;
+    width: 200px;
+    height: 200px;
+    margin-left: 140px;
+    padding: 10px;
+  }
